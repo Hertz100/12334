@@ -116,17 +116,17 @@ async def addcchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id, "I Joined Here As You Requested, Enjoy Lag Free HD Music 🎵, If You Have Any Suggestions Or Want To Report Any Issue/Bug Join our support @Shapphiree")
+        await USER.send_message(message.chat.id, "I Joined Here As You Requested 💃🕺, Enjoy Lag Free HD Music 🎵, If You Have Any Suggestions Or Want To Report Any Issue/Bug Join our support @Shapphiree")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>helper already in your channel</b>",
+            "<b>Assistant Already In Your Channel 😅</b>",
         )
         return
     except Exception as e:
         print(e)
         await message.reply_text(
             f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your channel due to heavy join requests for userbot! Make sure user is not banned in channel."
-            "\n\nOr manually add @DaisyXhelper to your Group and try again</b>",
+            "\n\nOr manually add Assistant to your Group and try again or contact our support @shapphiree</b>",
         )
         return
     await message.reply_text(
