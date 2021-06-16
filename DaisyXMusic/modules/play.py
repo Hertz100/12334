@@ -594,8 +594,12 @@ async def play(_, message: Message):
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
+                    InlineKeyboardButton(text="YouTube 🎵", url=f"{url}"),
                     InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                ],
+                [
+                    InlineKeyboardButton(text="Updates 🛸", url=f"https://t.me/luminous_robot"),
+                    InlineKeyboardButton(text="Support ⚒️", url=f"https://t.me/shapphiree"),
                 ],
                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
             ]
@@ -624,9 +628,9 @@ async def play(_, message: Message):
 
             while j < 5:
                 toxxt += f"{emojilist[j]} [Title - {results[j]['title']}](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f" ╚ **Duration** - {results[j]['duration']}\n"
-                toxxt += f" ╚ **Views** - {results[j]['views']}\n"
-                toxxt += f" ╚ **Channel** - {results[j]['channel']}\n\n"
+                toxxt += f" 📼 **Duration** - {results[j]['duration']}\n"
+                toxxt += f" 📼 **Views** - {results[j]['views']}\n"
+                toxxt += f" 📼 **Channel** - {results[j]['channel']}\n\n"
 
                 j += 1            
             koyboard = InlineKeyboardMarkup(
@@ -677,8 +681,12 @@ async def play(_, message: Message):
                         InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                     ],
                     [
-                        InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
+                        InlineKeyboardButton(text="YouTube 🎵", url=f"{url}"),
                         InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="Updates 🛸", url=f"https://t.me/luminous_robot"),
+                        InlineKeyboardButton(text="Support ⚒️", url=f"https://t.me/shapphiree"),
                     ],
                     [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
                 ]
