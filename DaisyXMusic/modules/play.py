@@ -944,7 +944,7 @@ async def deezer(client: Client, message_: Message):
         url = songs.result[0].url
         artist = songs.result[0].artist
         duration = songs.result[0].duration
-        thumbnail = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        thumbnail = ""
 
     except:
         await res.edit("Found Literally Nothing, You Should Work On Your English!")
@@ -1044,7 +1044,7 @@ async def jiosaavn(client: Client, message_: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message_.chat.id, "I joined this group for playing music in VC"
+                        message_.chat.id, "Hello 👋 , I'M Your Music Assistant 🎧 . I Joined This Chat For Playing Music In Voice Chats 🎙️ . If You have Any Doubt On How To Use Me Press /start In My PM 🧑‍🔧, IF Any Issue/bug  🪲 Found Report At @shapphiree"
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
@@ -1249,7 +1249,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"🍿 **Playing** Here The Song Requested By {r_by.mention} Via Youtube Music ⛱️",
+            caption=f""**Playing:** {}\n**Duration:** {} min\n**Requested by:** {}\n\n**Chat Name {}...**",
         )
         
         os.remove("final.png")
